@@ -1,0 +1,6 @@
+@import "Results";
+
+body {
+  color: map-get($colors, red);
+  font: $font-sans;
+}

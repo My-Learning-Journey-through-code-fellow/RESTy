@@ -1,8 +1,9 @@
-$backgroundColor: #f5f5f5;
+$backgroundColor: #3e3e3e;
 
 footer {
   background: darken($backgroundColor, 50);
   border-top: 1px solid #eee;
+  color: goldenrod;
   padding: 1em 3em;
   margin: 0;
 }

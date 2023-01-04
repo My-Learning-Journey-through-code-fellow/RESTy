@@ -7,7 +7,7 @@ const Results = (props) => {
   return (
     <>
       <section>
-        <pre>{data ? JSON.stringify(this.props.data, undefined, 2) : null}</pre>
+        <pre>{data ? JSON.stringify(props.data, undefined, 2) : null}</pre>
       </section>
     </>
   );
