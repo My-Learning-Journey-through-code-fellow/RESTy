@@ -1,4 +1,6 @@
 import React from 'react';
+// import JSONPretty from 'react-json-pretty';
+// import 'react-json-pretty/themes/monikai.css';
 
 const Results = (props) => {
 
@@ -12,16 +14,5 @@ const Results = (props) => {
     </>
   );
 }
-
-
-// class Results extends React.Component {
-//   render() {
-//     return (
-//       <section>
-//         <pre>{this.props.data ? JSON.stringify(this.props.data, undefined, 2) : null}</pre>
-//       </section>
-//     );
-//   }
-// }
 
 export default Results;
