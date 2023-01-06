@@ -24,6 +24,8 @@
 
 #### Tests
 
+- Add test for forms
+
 #### UML
 
 ![Alt text](assets/RESTy_UML.jpg)
