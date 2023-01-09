@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './form.scss';
 
 const Form = (props) => {
 
-  const [jsonData, setJsonData] = useState();
+  const [jsonData, setJsonData] = useState({});
   const [currentMethod, setMethod] = useState('GET');
   const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon');
 
@@ -15,7 +15,7 @@ const Form = (props) => {
       url: url,
       json: jsonData,
     };
-    props.setParams(formData);
+    props.handleAPICall(formData);
   }
 
   const setActiveClass = (method) => {
@@ -34,10 +34,10 @@ const Form = (props) => {
         <textarea id='upload' name='upload' onChange={(e) => setJsonData(e.target.value)} rows='5' cols='33'>
         </textarea>
         <label className="methods">
-          <span id='get' className={setActiveClass('GET')} onClick={() => setMethod('GET')}>GET</span>
-          <span id='post' className={setActiveClass('POST')} onClick={() => setMethod('POST')}>POST</span>
-          <span id='put' className={setActiveClass('PUT')} onClick={() => setMethod('PUT')}>PUT</span>
-          <span id='delete' className={setActiveClass('DELETE')} onClick={() => setMethod('DELETE')}>DELETE</span>
+          <span id='get' className={setActiveClass('get')} onClick={() => setMethod('get')}>GET</span>
+          <span id='post' className={setActiveClass('post')} onClick={() => setMethod('post')}>POST</span>
+          <span id='put' className={setActiveClass('put')} onClick={() => setMethod('put')}>PUT</span>
+          <span id='delete' className={setActiveClass('delete')} onClick={() => setMethod('delete')}>DELETE</span>
         </label>
       </form>
     </>

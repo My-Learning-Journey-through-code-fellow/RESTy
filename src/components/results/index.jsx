@@ -1,6 +1,4 @@
-import React from 'react';
-// import JSONPretty from 'react-json-pretty';
-// import 'react-json-pretty/themes/monikai.css';
+import './results.scss';
 
 const Results = (props) => {
 
